@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+    <title><%= coin.name %></title>
+  </head>
+  <body>
+    <h1>Update <%= coin.name %></h1>
+    <form action="/coins/<%= coin.id %>?_method=PUT" method="POST">
+      <p>Current price <%= coin.price %></p>
+      <input
+        type="text"
+        class="form__field"
+        placeholder="price"
+        name="newCoinPrice"
+      />
+      <input
+        type="text"
+        class="form__field"
+        placeholder="description"
+        name="newCoinDescription"
+      />
+      <button type="submit">Save</button>
+    </form>
+  </body>
+</html>

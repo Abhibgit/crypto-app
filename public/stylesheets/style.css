@@ -1,0 +1,110 @@
+a {
+  color: #8b1751;
+}
+
+.delete-form {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.delete-form button {
+  color: red;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 900px;
+  justify-content: center;
+  background: lightblue;
+}
+
+h1 {
+  font-family: "Dancing Script", cursive;
+  font-size: 80px;
+  margin-bottom: 30px;
+  justify-content: center;
+}
+
+h3,
+p {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 30px;
+  margin-bottom: 30px;
+  color: black;
+  justify-content: center;
+}
+
+button {
+  border: none;
+  outline: none;
+  padding: 10px 20px;
+  border-radius: 50px;
+  color: #333;
+  background: #fff;
+  margin-bottom: 50px;
+  box-shadow: 0 3px 20px 0 #0000003b;
+}
+button:hover {
+  cursor: pointer;
+}
+
+a:link,
+a:visited {
+  text-decoration: none;
+}
+a:hover,
+a:active {
+  text-decoration: underline;
+}
+
+.form__field {
+  font-family: inherit;
+  width: 20%;
+  border: 2;
+  border-bottom: 2px solid #9b9b9b;
+  outline: 0;
+  font-size: 1.3rem;
+  color: #fff;
+  padding: 7px 0;
+  background: transparent;
+  transition: border-color 0.2s;
+}
+
+::placeholder {
+  color: #9b9b9b;
+}
+
+::placeholder-shown ~ .form__label {
+  font-size: 1.3rem;
+  cursor: text;
+  top: 20px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+}
+
+.coinContainer {
+  border: 1px solid yellow;
+}
+
+.homePage {
+  justify-content: center;
+  background: lightblue;
+}
+
+.getStarted {
+  border: none;
+  outline: none;
+  padding: 10px 20px;
+  border-radius: 50px;
+  color: #333;
+  background: #fff;
+  margin-bottom: 50px;
+  box-shadow: 0 3px 20px 0 #0000003b;
+}

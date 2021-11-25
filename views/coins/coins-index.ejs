@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+  </head>
+  <body>
+    <h1>Coins</h1>
+    <a href="/coins/new">Add new coin</a>
+    <div class="container">
+      <% coins.forEach(function(c) { %>
+      <div class="coinContainer">
+        <a href="/coins/<%= c.id %>"><%= c.name %> - <%= c.price %></a>
+        <form
+          action="/coins/<%= c.id %>?_method=DELETE"
+          class="delete-form"
+          method="POST"
+        >
+          <button type="submit">X</button>
+        </form>
+        <% }); %>
+      </div>
+    </div>
+  </body>
+</html>
