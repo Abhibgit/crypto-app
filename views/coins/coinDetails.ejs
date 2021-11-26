@@ -9,11 +9,12 @@
       <a class="getStarted" href="/">Home</a>
       <a class="getStarted" href="/coins">Get started</a>
       <a class="getStarted" href="/users">Show users</a>
+      <a class="getStarted" href="/donotpush">Do not push</a>
     </nav>
     <h1><%= coin.name %></h1>
-      <p>Name <%= coin.name %></p>
-      <p>Price <%= coin.price %></p>
-      <p>Desciption <%= coin.description%><p/>
+      <p>Name: <%= coin.name %></p>
+      <p>Price: <%= coin.price %></p>
+      <p>Description: <%= coin.description%><p/>
       <p><a href="/coins/<%= coin.id %>/edit">Edit Coin<a></p>
   </body>
 </html>

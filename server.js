@@ -8,6 +8,7 @@ require("dotenv").config();
 require("./config/database");
 
 var indexRouter = require("./routes/index");
+// var endRouter = require("./routes/index");
 var coinsRouter = require("./routes/coins");
 var usersRouter = require("./routes/users");
 
@@ -27,6 +28,7 @@ app.use(methodOverride("_method"));
 app.use("/", indexRouter);
 app.use("/coins", coinsRouter);
 app.use("/users", usersRouter);
+// app.use("/donotpush", endRouter);
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {
