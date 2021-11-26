@@ -4,20 +4,20 @@ Crypto App is a cataloging app for your favourite crypto currencies
 
 Keep track nof the coins of interest and join us forthe crypto currency ride.
 
-☐ Screenshot(s)/wireframes: 
+☐ Screenshot(s)/wireframes:
 <img width="868" alt="Screen Shot 2021-11-26 at 6 10 00 AM" src="https://user-images.githubusercontent.com/92744956/143588941-734a03c3-4333-4497-a766-bd99e2e9139f.png">
 
 <img width="1419" alt="Screen Shot 2021-11-26 at 7 50 02 AM" src="https://user-images.githubusercontent.com/92744956/143588958-44c2d8bd-b892-467e-b990-8aa2c0b72d83.png">
 
 <img width="1419" alt="Screen Shot 2021-11-26 at 8 38 53 AM" src="https://user-images.githubusercontent.com/92744956/143589520-c319e30f-0219-4c90-b1e7-52e6a61b8a34.png">
 
+Wireframes:
 
- Wireframes:
- 
  <img width="805" alt="Screen Shot 2021-11-18 at 10 58 28 AM" src="https://user-images.githubusercontent.com/92744956/143589187-dd9db205-c4b4-4a71-bda2-f3d3939db385.png">
 
-
 ☐ Technologies Used: List of the technologies used.
+
+MongoDb, Node.js, Mongoose, javascript, css and Heroku.
 
 My code:
 
@@ -26,8 +26,6 @@ My code:
 ☐ My favorite EJS template: end.ejs. Demonstartion: http://localhost:3000/donotpush
 
 ☐ The controller for the main model: coins.js
-
-MongoDb, Mongoose, javascript, css and Heroku.
 
 Technical Requirements:
 
