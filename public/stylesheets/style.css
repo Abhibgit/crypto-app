@@ -16,10 +16,12 @@ a {
   margin: 0;
   box-sizing: border-box;
 }
+
 body {
+  background-color: #cccccc;
   height: 900px;
   justify-content: center;
-  background: lightblue;
+  background: rgb(220, 223, 224);
 }
 
 h1 {
@@ -96,7 +98,13 @@ a:active {
 
 .homePage {
   justify-content: center;
-  background: rgb(13, 16, 185);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0.5),
+      rgba(255, 255, 255, 0.5)
+    ),
+    url("../images/image0.jpeg");
 }
 
 .getStarted {

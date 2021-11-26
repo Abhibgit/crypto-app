@@ -8,6 +8,11 @@
     <title><%= coin.name %></title>
   </head>
   <body>
+    <nav>
+      <a class="getStarted" href="/">Home</a>
+      <a class="getStarted" href="/coins">Get started</a>
+      <a class="getStarted" href="/users">Show users</a>
+    </nav>
     <h1>Update <%= coin.name %></h1>
     <form action="/coins/<%= coin.id %>?_method=PUT" method="POST">
       <p>Current price <%= coin.price %></p>
