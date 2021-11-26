@@ -7,21 +7,20 @@
   <body>
     <h1><%= user.name %></h1>
     <p>Name <%= user.name %></p>
-    <div>Cast:</div>
+    <div>Coins:</div>
     <ul>
       <%- user.coin.map(c => `
       <li>${c.name} <small>${c.price}</small></li>
       ` ).join('') %>
     </ul>
 
-    <!-- add to cast form below this comment -->
-    <!-- <form id="add-per-to-coin" action="???" method="POST">
+    <form id="add-per-to-coin" action="/users/<%=user.id%>/coin" method="POST">
       <select name="coinId">
         <%- coins.map(c => `
         <option value="${c._id}">${c.name}</option>
         ` ).join('') %>
       </select>
-      <button type="submit">Add to Coin</button>
-    </form> -->
+      <button type="submit">Add coin to User</button>
+    </form>
   </body>
 </html>

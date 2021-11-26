@@ -25,12 +25,11 @@ function index(req, res) {
 // }
 
 function show(req, res) {
-  User.findById(req.params.id)
+  User.findById(req.params.userId)
     .populate("coin")
     .exec(function (err, user) {
       Coin.find({ _id: { $nin: user.coin } }, function (err, coins) {
-        console.log(user);
-        res.render("users/user-index.ejs", {
+        res.render("users/userDetails.ejs", {
           user,
           coins,
         });

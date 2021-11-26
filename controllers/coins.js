@@ -1,4 +1,5 @@
 const Coin = require("../models/coin");
+const User = require("../models/user");
 
 module.exports = {
   index,
@@ -8,6 +9,7 @@ module.exports = {
   delete: deleteCoin,
   update: updateCoinPrice,
   edit: edit,
+  addCoinToUser: addCoinToUser,
 };
 
 function index(req, res) {
@@ -37,8 +39,6 @@ function show(req, res) {
 }
 
 function deleteCoin(req, res) {
-  console.log("deletecoin");
-  console.log(req.params.coinId);
   Coin.findOneAndDelete({ _id: req.params.coinId }, function (error, coin) {
     console.log("deleted", coin);
     res.redirect("/coins");
@@ -56,20 +56,24 @@ function edit(req, res) {
 }
 
 function updateCoinPrice(req, res) {
-  console.log("updateCoinPrice");
   Coin.findById(req.params.coinId, function (err, coin) {
-    console.log("insidecoin");
-    console.log(req.body);
     coin
       .updateOne({
         price: req.body.newCoinPrice,
         description: req.body.newCoinDescription,
       })
       .then(function (success) {
-        console.log("updated");
         res.redirect("/coins");
       });
   });
+}
 
-  //res.redirect("/coins");
+function addCoinToUser(req, res) {
+  console.log("addCoinToUser");
+  User.findById(req.params.userId, function (err, user) {
+    user.coin.push(req.body.coinId);
+    user.save(function (err) {
+      res.redirect(`/users/${user._id}`);
+    });
+  });
 }

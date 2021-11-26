@@ -7,6 +7,7 @@ router.get("/new", coinFileCtrl.new);
 router.get("/:coinId", coinFileCtrl.show);
 router.get("/:coinId/edit", coinFileCtrl.edit);
 router.post("/", coinFileCtrl.create);
+router.post("/user/:userId/coin", coinFileCtrl.addCoinToUser);
 router.delete("/:coinId", coinFileCtrl.delete);
 router.put("/:coinId", coinFileCtrl.update);
 
