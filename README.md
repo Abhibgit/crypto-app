@@ -4,7 +4,7 @@ Crypto App is a cataloging app for your favourite crypto currencies
 
 Keep track nof the coins of interest and join us forthe crypto currency ride.
 
-☐ Screenshot(s)/wireframes: A screenshot of your app's landing page and any other screenshots of interest:
+☐ Screenshot(s)/wireframes: 
 <img width="868" alt="Screen Shot 2021-11-26 at 6 10 00 AM" src="https://user-images.githubusercontent.com/92744956/143588941-734a03c3-4333-4497-a766-bd99e2e9139f.png">
 
 <img width="1419" alt="Screen Shot 2021-11-26 at 7 50 02 AM" src="https://user-images.githubusercontent.com/92744956/143588958-44c2d8bd-b892-467e-b990-8aa2c0b72d83.png">
