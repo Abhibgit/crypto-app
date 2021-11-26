@@ -1,6 +1,9 @@
 a {
   color: #f10707;
+  text-decoration: none;
+
   background-color: rgb(230, 232, 238);
+  background-size: cover;
 }
 
 .delete-form {
@@ -25,8 +28,17 @@ body {
   background: rgb(220, 223, 224);
 }
 
+body {
+  background-image: linear-gradient(
+      rgba(82, 80, 80, 0.5),
+      rgba(255, 255, 255, 0.5)
+    ),
+    url("../images/ethereum.jpg");
+}
+
 h1 {
   font-family: "Dancing Script", cursive;
+  text-shadow: 2px 2px;
   font-size: 80px;
   margin-bottom: 30px;
   justify-content: center;
@@ -95,7 +107,7 @@ a:active {
       rgba(255, 255, 255, 0.5),
       rgba(255, 255, 255, 0.5)
     ),
-    url("../images/getstarted.jpg");
+    url("../images/ethereum.jpg");
 }
 
 .coinContainer {
@@ -163,12 +175,13 @@ nav > a.active {
       rgba(255, 255, 255, 0.5),
       rgba(255, 255, 255, 0.5)
     ),
-    url("../images/image0.png");
+    url("../images/BitcoinGold.jpg");
 }
 .listpagecontainer {
+  align-items: stretch;
   background-image: linear-gradient(
       rgba(255, 255, 255, 0.5),
       rgba(255, 255, 255, 0.5)
     ),
-    url("../images/bbyoda.jpg");
+    url("../images/ethereum.jpg");
 }
