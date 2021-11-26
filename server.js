@@ -9,6 +9,7 @@ require("./config/database");
 
 var indexRouter = require("./routes/index");
 var coinsRouter = require("./routes/coins");
+var usersRouter = require("./routes/users");
 
 var app = express();
 
@@ -25,6 +26,7 @@ app.use(methodOverride("_method"));
 
 app.use("/", indexRouter);
 app.use("/coins", coinsRouter);
+app.use("/users", usersRouter);
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {

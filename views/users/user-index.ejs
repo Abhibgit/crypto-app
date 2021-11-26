@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="/stylesheets/style.css" />
+  </head>
+  <body>
+    <h1>Users</h1>
+    <a href="/users/new">Add new user</a>
+    <div class="container">
+      <% users.forEach(function(u) { %>
+      <div class="coinContainer">
+        <a href="/users/<%= u.id %>"><%= u.name %></a>
+        <% }); %>
+      </div>
+    </div>
+  </body>
+</html>

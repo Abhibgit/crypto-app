@@ -27,6 +27,7 @@ h1 {
   font-size: 80px;
   margin-bottom: 30px;
   justify-content: center;
+  border-radius: 50px solid rgb(9, 235, 129);
 }
 
 h3,
@@ -95,7 +96,7 @@ a:active {
 
 .homePage {
   justify-content: center;
-  background: lightblue;
+  background: rgb(13, 16, 185);
 }
 
 .getStarted {
