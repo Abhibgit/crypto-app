@@ -1,5 +1,6 @@
 a {
-  color: #8b1751;
+  color: #f10707;
+  background-color: rgb(230, 232, 238);
 }
 
 .delete-form {
@@ -162,12 +163,12 @@ nav > a.active {
       rgba(255, 255, 255, 0.5),
       rgba(255, 255, 255, 0.5)
     ),
-    url("../images/getstarted.jpg");
+    url("../images/image0.png");
 }
 .listpagecontainer {
   background-image: linear-gradient(
       rgba(255, 255, 255, 0.5),
       rgba(255, 255, 255, 0.5)
     ),
-    url("../images/getstarted.jpg");
+    url("../images/bbyoda.jpg");
 }
