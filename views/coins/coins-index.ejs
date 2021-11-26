@@ -10,20 +10,22 @@
       <a class="getStarted" href="/users">Show users</a>
       <a class="getStarted" href="/donotpush">Do not push</a>
     </nav>
-    <h1>Coins</h1>
-    <a href="/coins/new">Add new coin</a>
-    <div class="container">
-      <% coins.forEach(function(c) { %>
-      <div class="coinContainer">
-        <a href="/coins/<%= c.id %>"><%= c.name %> - <%= c.price %></a>
-        <form
-          action="/coins/<%= c.id %>?_method=DELETE"
-          class="delete-form"
-          method="POST"
-        >
-          <button type="submit">X</button>
-        </form>
-        <% }); %>
+    <div class="listpagecontainer">
+      <h1>Coins</h1>
+      <a href="/coins/new">Add new coin</a>
+      <div class="container">
+        <% coins.forEach(function(c) { %>
+        <div class="coinContainer">
+          <a href="/coins/<%= c.id %>"><%= c.name %> - <%= c.price %></a>
+          <form
+            action="/coins/<%= c.id %>?_method=DELETE"
+            class="delete-form"
+            method="POST"
+          >
+            <button type="submit">X</button>
+          </form>
+          <% }); %>
+        </div>
       </div>
     </div>
   </body>

@@ -118,12 +118,6 @@ a:active {
   padding: 10px 20px;
   border-radius: 50px;
   color: #333;
-  background-image: linear-gradient(
-      rgba(255, 255, 255, 0.5),
-      rgba(255, 255, 255, 0.5)
-    ),
-    url("../images/getstarted.jpg");
-
   margin-bottom: 50px;
   box-shadow: 0 3px 20px 0 #0000003b;
 }
@@ -161,4 +155,19 @@ nav > a:hover {
 
 nav > a.active {
   color: white;
+}
+
+.coinDetails {
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0.5),
+      rgba(255, 255, 255, 0.5)
+    ),
+    url("../images/getstarted.jpg");
+}
+.listpagecontainer {
+  background-image: linear-gradient(
+      rgba(255, 255, 255, 0.5),
+      rgba(255, 255, 255, 0.5)
+    ),
+    url("../images/getstarted.jpg");
 }
