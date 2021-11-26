@@ -10,14 +10,16 @@
       <a class="getStarted" href="/users">Show users</a>
       <a class="getStarted" href="/donotpush">Do not push</a>
     </nav>
+    <div class="listpagecontainer"></div>
     <h1>Users</h1>
     <a href="/users/new">Add new user</a>
     <div class="container">
-      <% users.forEach(function(u) { %>
-      <div class="coinContainer">
-        <a href="/users/<%= u.id %>"><%= u.name %></a>
-        <% }); %>
-      </div>
+    <% users.forEach(function(u) { %>
+    <div class="userContainer">
+      <a href="/users/<%= u.id %>"><%= u.name %></a>
+      <% }); %>
     </div>
+  </div>
+</div>
   </body>
 </html>

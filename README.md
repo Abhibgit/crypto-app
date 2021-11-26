@@ -6,7 +6,15 @@ Keep track nof the coins of interest and join us forthe crypto currency ride.
 
 ☐ Screenshot(s)/wireframes: A screenshot of your app's landing page and any other screenshots of interest:
 
-☐ Technologies Used: List of the technologies used
+☐ Technologies Used: List of the technologies used.
+
+My code:
+
+☐ The "main" Mongoose model: coin.js
+
+☐ My favorite EJS template: end.ejs. Demonstartion: http://localhost:3000/donotpush
+
+☐ The controller for the main model: coins.js
 
 MongoDb, Mongoose, javascript, css and Heroku.
 
